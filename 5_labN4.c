@@ -4,9 +4,9 @@ int main (void){
 
     double a,b,c,d;
     a = 1.602e-19; //charge of an electron
-    //b = 1.1; //holds current
+    b = 0.0; //holds current
     c = 1 / a; //electrons per 1 coulomb
-    //d = c * b; //electrons per given current
+    //d = c * b; electrons per given current
 
     printf("Welcome to the Electron Calculator!\n");
     printf("\n\tEnter your electrical current in Amp: ");
