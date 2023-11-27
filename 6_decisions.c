@@ -19,6 +19,11 @@ int main(){
    } else{
     printf("You entered number zero\n");
    }
+   if((a == 1) || (a == 21)){
+    printf("Your number is either 1 or 21\n");
+   }else{
+    printf("Your number is neither 1 or 21\n");
+   }
 
     return 0;
 }
