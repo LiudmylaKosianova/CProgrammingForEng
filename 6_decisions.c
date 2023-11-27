@@ -11,6 +11,7 @@ int main(){
    int a;
    printf("Enter your number: ");
    scanf("%d", &a);
+   printf("You entered %d\n", a);
    if(a < 0){
     printf("You entered a negative number\n");
    } else if(a > 0){
