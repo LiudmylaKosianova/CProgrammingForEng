@@ -8,7 +8,7 @@ int main(){
     print statements
     */
 
-   int a;
+   int a, b;
    printf("Enter your number: ");
    scanf("%d", &a);
    printf("You entered %d\n", a);
@@ -22,8 +22,24 @@ int main(){
    if((a == 1) || (a == 21)){
     printf("Your number is either 1 or 21\n");
    }else{
-    printf("Your number is neither 1 or 21\n");
+    printf("Your number is neither 1 nor 21\n");
    }
+
+   printf("Enter one more integer: \n");
+   scanf("%d", &b);
+   switch(b){
+    case 11:
+    printf("11 is an odd number.\n");
+    break;
+    case 10:
+    printf("10 is an even number\n");
+    break;
+    default:
+    printf("You number is neither 11 nor 10\n");
+    break;
+   }
+
+
 
     return 0;
 }
