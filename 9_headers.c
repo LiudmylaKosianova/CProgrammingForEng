@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 
 int main(void){
 
@@ -6,5 +6,7 @@ int main(void){
     int size;
 
     size = sizeof(A);
+
+    printf("Size of A is: %d\n", size);
     return 0;
 }
