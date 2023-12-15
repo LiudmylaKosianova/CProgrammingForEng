@@ -20,5 +20,13 @@ int main(){
         printf("A[%d] = %d \n", i, A[i]);
     }
 
+    int B[4] = {7, 21, 78,-4};
+
+    for(int i = 0; i<4; i++){
+        printf("B[%d] = %d \n", i, B[i]);
+    }
+
+
+
     return 0;
 }
