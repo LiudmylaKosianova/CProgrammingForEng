@@ -33,6 +33,7 @@ int main(){
     printf("size of B[0] is %ld\n", sizeof(B[0]));
     Bsize = sizeof(B) / sizeof(B[0]);
     printf("size of B is %d\n", Bsize);
+    printf("Hello");
 
 
 
