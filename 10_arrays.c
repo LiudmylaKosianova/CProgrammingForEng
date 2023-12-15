@@ -3,6 +3,7 @@
 int main(){
 
     int A[4];
+    int v;
 
     A[0] = 22;
     A[1] = 109;
