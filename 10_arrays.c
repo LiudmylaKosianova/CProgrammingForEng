@@ -14,5 +14,11 @@ int main(){
     printf("A[2] = %d \n", A[2]);
     printf("A[3] = %d \n", A[3]);
 
+    printf("Printing with loop\n");
+
+    for(int i = 0; i<4; i++){
+        printf("A[%d] = %d \n", i, A[i]);
+    }
+
     return 0;
 }
