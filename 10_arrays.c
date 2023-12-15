@@ -34,7 +34,20 @@ int main(){
     printf("size of B[0] is %ld\n", sizeof(B[0]));
     Bsize = sizeof(B) / sizeof(B[0]);
     printf("size of B is %d\n", Bsize);
-    printf("Hello again again");
+     
+
+    float Sample[5];
+
+    for(int i = 0; i < 5; i++){
+        printf("Enter value #%d: \n", i+1);
+        scanf(" %f", &Sample[i]);
+    }
+
+    printf("\tThank you. Your array:\n");
+    for(int i = 0; i < 5; i++){
+        printf(" Sample[%d] = %.2lf\n", i, Sample[i]);
+    }
+
 
 
 
