@@ -23,5 +23,13 @@ int main(){
 
     printf("The max value is %.2lf\n", Dmax);
 
+    double Dmin = D[0];
+    for(i=1; i<5; i++){
+        if(D[i]<Dmin){
+            Dmin = D[i];
+        }
+    }
+    printf("The min value is %.2lf\n", Dmin);
+
     return 0;
 }
