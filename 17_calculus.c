@@ -4,7 +4,7 @@
 
 #define Tmin 0.0 //decimal places indicate double/float
 #define Tmax 6.28
-#define Npts 25 //no decimal places indicate int
+#define Npts 10 //no decimal places indicate int
 
 int main(void){
 
@@ -28,18 +28,28 @@ int main(void){
     }
 
     /*find derivative*/
-
     double dVdT[Npts];
     for(i=0; i<Npts; i++){
         dVdT[i] = (Vsin[i+1] - Vsin[i]) / Tstep;
     } 
 
+    /*find integral and sum of areas of polygons*/
+    double PolArea[Npts];
+    for(i=1; i<Npts; i++){
+        PolArea[i] = Vsin[i] * Tstep;
+    }
+    double TotArea = 0.0;
+    for(i=0; i<Npts; i++){
+        TotArea += PolArea[i];
+    }
+    
+
     /*print the result*/
     for(i=0; i<Npts; i++){
-        printf("T[%d]=%.2lf \tVsin[%d]=%.3lf \tdVdT[%d]=%.3lf\n",
-         i, T[i], i, Vsin[i], i, dVdT[i]);
+        printf("T[%d]=%.2lf \tVsin[%d]=%.3lf \tdVdT[%d]=%.3lf \tPolArea[%d]=%.3lf\n",
+         i, T[i], i, Vsin[i], i, dVdT[i], i, PolArea[i]);
     }
 
-
+ 
     return 0;
 }
