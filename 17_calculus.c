@@ -27,9 +27,17 @@ int main(void){
         Vsin[i] = sin(T[i]);
     }
 
+    /*find derivative*/
+
+    double dVdT[Npts];
+    for(i=0; i<Npts; i++){
+        dVdT[i] = (Vsin[i+1] - Vsin[i]) / Tstep;
+    } 
+
     /*print the result*/
     for(i=0; i<Npts; i++){
-        printf("T[%d] = %.2lf \tVsin[%d] = %.3lf\n", i, T[i], i, Vsin[i]);
+        printf("T[%d]=%.2lf \tVsin[%d]=%.3lf \tdVdT[%d]=%.3lf\n",
+         i, T[i], i, Vsin[i], i, dVdT[i]);
     }
 
 
