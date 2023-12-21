@@ -4,7 +4,7 @@
 
 #define Tmin 0.0 //decimal places indicate double/float
 #define Tmax 6.28
-#define Npts 10 //no decimal places indicate int
+#define Npts 25 //no decimal places indicate int
 
 int main(void){
 
