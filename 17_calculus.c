@@ -50,6 +50,8 @@ int main(void){
          i, T[i], i, Vsin[i], i, dVdT[i], i, PolArea[i]);
     }
 
+    printf("The total area is %.3lf\n", TotArea);
+
  
     return 0;
 }
