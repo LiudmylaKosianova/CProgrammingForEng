@@ -10,3 +10,8 @@ The YouTube video channel:
 
 https://www.youtube.com/@digitallogicprogramming2199/featured
 
+The youtube lectures are very interesting
+
+![Alt text](<Screenshot from 2023-12-22 20-09-57-1.png>)
+
+![Alt text](<Screenshot from 2023-12-22 20-08-46.png>)
