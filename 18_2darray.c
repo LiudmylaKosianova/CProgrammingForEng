@@ -29,5 +29,22 @@ int main(void){
         }
     }
 
+    printf("------ \n");
+
+    int N[2][3] = {{1,2,3}, {4,5,6}};
+    for (i=0; i<2; i++){
+        for(j=0; j<3; j++){
+            printf("N[%d][%d] = %d \n", i, j, N[i][j]);
+        }
+    }
+
+    /*print as a table*/
+    for (i=0; i<2; i++){
+        for(j=0; j<3; j++){
+            printf("%d \t", N[i][j]);
+        }
+        printf("\n");
+    }
+
     return 0;
 }
