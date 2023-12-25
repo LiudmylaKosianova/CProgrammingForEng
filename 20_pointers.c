@@ -21,8 +21,9 @@ int main(void){
     /*looked at the address, stored in pointer variable *A_po, 
       and then allocate the value, stored in that address, to the varible B_int*/
     B_int = *A_po; 
-    
+
     printf("A_int is %d, and B_int is %d\n", A_int, B_int);
+    printf("A_po has size of %ld bytes\n", sizeof(A_po));
 
 
     return 0;
