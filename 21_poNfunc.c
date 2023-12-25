@@ -8,6 +8,7 @@
 //function to double everything
 
 void double_up(double *Aptr, int N);
+void copy_ar(double *Aptr, double *Bptr, int N);
 
 int main(void){
 
@@ -33,6 +34,13 @@ int main(void){
             printf("T[%d]=%.3lf\tVsin[%d]=%.3lf\n", i, T[i], i, Vsin[i]);
         }
 
+    //call function
+    double_up(Vsin_p,Npts);
+
+     for(i=0; i<Npts; i++){
+            printf("T[%d]=%.3lf\tVsin[%d]=%.3lf\n", i, T[i], i, Vsin[i]);
+        }
+
 
     return 0;
 }
@@ -41,5 +49,12 @@ void double_up(double *Aptr, int N){
     int i;
     for(i=0; i<N; i++){
         *(Aptr + i) = *(Aptr +i) * 2;
+    }
+}
+
+void copy_ar(double *Aptr, double *Bptr, int N){
+    int i;
+    for(i=0; i<N; i++){
+        *(Bptr + i) = *(Aptr + i);
     }
 }
