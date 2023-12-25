@@ -25,6 +25,21 @@ int main(void){
     printf("A_int is %d, and B_int is %d\n", A_int, B_int);
     printf("A_po has size of %ld bytes\n", sizeof(A_po));
 
+    int i;
+    int A[5] = {77, 56, 28, 99, 109};
+    int *Aptr = A;
+
+    printf("&A[0] address is %p\n", &A[0]);
+    printf("Aptr address is %p\n", Aptr);
+
+    for(i=0; i<5; i++){
+      printf("A[%d] = %d\n", i, A[i]);
+    }
+
+    for(i=0; i<5; i++){
+      printf("A[%d] = %d\n", i, *(Aptr + i));
+    }
+
 
     return 0;
 }
