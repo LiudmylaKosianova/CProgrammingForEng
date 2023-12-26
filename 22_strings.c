@@ -39,6 +39,22 @@ int main(void){
         printf("I don't know you ...");
     }
 
+    //char str3[10] = "Hey there";
+    /*not allowed*/
+    // char str3[10];
+    // str3 = "Hey there";
+    /*allowed*/
+    
+    char str3[10];
+    strcpy(str3, "Hey There");
+    
+
+    char str4[10] = "Liudmyla ";
+    char str5[10] = "Kosianova";
+    strcat(str4, str5);
+    printf("%s \n", str4);
+
+
 
 
     return 0;
