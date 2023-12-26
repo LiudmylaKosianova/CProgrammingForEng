@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(void){
 
@@ -53,6 +54,17 @@ int main(void){
     char str5[10] = "Kosianova";
     strcat(str4, str5);
     printf("%s \n", str4);
+
+    /*atoi()*/
+    char age_str[5];
+    //int age_int;
+    double age_float;
+    printf("Enter your age: ");
+    fgets(age_str, sizeof(age_str), stdin);
+    //age_int = atoi(age_str);
+    age_float = atof(age_str);
+    printf("You are %f years old\n", age_float);
+
 
 
 
