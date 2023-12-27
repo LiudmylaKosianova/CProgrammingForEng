@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <math.h>
+
 
 #define Tmin 0.0
 #define Tmax 6.28
-#define Npts 10
+#define Npts 100
 
 int main(void){
 
@@ -12,7 +14,7 @@ int main(void){
     fclose(fout);
 
     FILE *tout;
-    tout = fopen("tout.txt", "w");
+    tout = fopen("tout.csv", "w");
     double T[Npts];
     double Tstep = (Tmax - Tmin)/ (Npts -1);
     int i;
@@ -22,8 +24,14 @@ int main(void){
         T[i] = Tstep + T[i - 1];
     }
 
+     
+    //fill cosine array
+    double C[Npts];
     for(i=0; i<Npts; i++){
-        fprintf(tout, "%.3lf\n", T[i]);
+        C[i] = cos(T[i]);
+    }
+    for(i=0; i<Npts; i++){
+        fprintf(tout, "%.3lf, %.3lf\n", T[i], C[i]);
     }
 
     return 0;
