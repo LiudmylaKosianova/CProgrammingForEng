@@ -22,7 +22,9 @@ int main(void){
         T[i] = Tstep + T[i - 1];
     }
 
-
+    for(i=0; i<Npts; i++){
+        fprintf(tout, "%.3lf\n", T[i]);
+    }
 
     return 0;
 }
