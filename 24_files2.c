@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(void){
 
@@ -19,9 +20,28 @@ int main(void){
     */
 
     
-    while(EOF != fscanf(fin, "%s %d", buf1, &buf2)){
-        printf("%s %d\n", buf1, buf2);
-    }
+    // while(EOF != fscanf(fin, "%s %d", buf1, &buf2)){
+    //     printf("%s %d\n", buf1, buf2);
+    // }
+
+    //fgets()
+
+    // while(fgets(buf1, 50, fin) != NULL){
+    //     printf("%s", buf1);
+    // }
+
+    char *token;
+
+    while (fgets(buf1, 50, fin) != NULL){
+        token = strtok(buf1, " ");
+        token = strtok(NULL, " ");
+
+        printf("%s", token);
+    }    
+
+        
+
+
 
     fclose(fin);
 
